@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+plotly
+matplotlib
+google-generativeai
+langchain
+langchain-community
+faiss-cpu
+pypdf
+reportlab
+python-docx
+openpyxl
+python-dotenv
