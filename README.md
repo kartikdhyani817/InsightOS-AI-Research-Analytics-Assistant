@@ -2,7 +2,7 @@
 
 InsightOS is an AI-powered document and data analytics platform that combines Business Intelligence, Artificial Intelligence, and document understanding into a single application. It enables users to upload datasets and documents, interact with them using Google Gemini AI, analyze data through an intuitive dashboard, and generate professional reports.
 
----
+
 
 # 🚀 Day 4 Progress
 
