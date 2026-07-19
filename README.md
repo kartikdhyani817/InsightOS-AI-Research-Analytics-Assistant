@@ -1,151 +1,156 @@
-# 🧠 InsightOS – AI Research & Analytics Assistants
+# InsightOS — AI Business Intelligence Platform
 
-InsightOS is an AI-powered document and data analytics platform that combines Business Intelligence, Artificial Intelligence, and document understanding into a single application. It enables users to upload datasets and documents, interact with them using Google Gemini AI, analyze data through an intuitive dashboard, and generate professional reports.
+InsightOS is a Streamlit-based AI business intelligence platform that converts uploaded datasets and documents into dashboards, executive insights, forecasts, risk assessments, recommendations, and downloadable reports.
 
+## Live Application
 
+**Streamlit App:** `PASTE_YOUR_STREAMLIT_APP_URL_HERE`
 
-# 🚀 Day 4 Progress
+### Demo Login
 
-Today's development focused on transforming InsightOS into a fully integrated AI-powered analytics platform by connecting all backend modules into a single application.
+```text
+Username: admin
+Password: insightos123
+```
 
-### 🤖 Artificial Intelligence
+> These credentials are only for the public portfolio demo. Do not upload confidential or sensitive data.
 
-* Integrated Google Gemini API for AI-powered document interaction.
-* Added AI chat interface capable of answering questions from uploaded documents.
-* Connected Retrieval-Augmented Generation (RAG) engine to provide relevant context before sending prompts to Gemini.
-* Added dataset summarization using AI for business insights.
+## Main Features
 
-### 📂 File Processing
+- CSV and Excel data analysis
+- PDF, DOCX, and TXT processing
+- Dataset profiling and data-quality scoring
+- Missing-value and duplicate detection
+- Cleaning recommendations
+- KPI recommendation and executive dashboards
+- Interactive charts and chart explanations
+- Forecasting and trend analysis
+- Opportunity and risk detection
+- Smart alerts
+- AI-generated summaries and recommendations
+- AI chat and search
+- PDF and Excel exports
+- Responsive light and dark themes
 
-* Added complete support for CSV, PDF, DOCX, and TXT file processing.
-* Implemented document preview with metadata extraction.
-* Improved file management using Streamlit Session State.
-* Added automatic handling for multiple document formats.
+## Tech Stack
 
-### 📊 Analytics Dashboard
+Python, Streamlit, Pandas, NumPy, Plotly, Matplotlib, Scikit-learn, Google Gemini, LangChain, FAISS, PyPDF2, python-docx, OpenPyXL, and ReportLab.
 
-* Developed a professional analytics dashboard with KPI cards.
-* Added dataset statistics including rows, columns, missing values, duplicates, and memory usage.
-* Implemented interactive charts for numerical data visualization.
-* Added detailed column information and statistical summaries.
+## Run Locally
 
-### 📄 Reports
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
+cd YOUR_REPOSITORY_NAME
+python -m venv .venv
+```
 
-* Built an executive report generation module.
-* Added downloadable text reports.
-* Implemented automatic executive summary generation for uploaded datasets.
+Windows:
 
-### ⚙ Application Improvements
+```bash
+.venv\Scripts\activate
+```
 
-* Rebuilt the application using a modular architecture.
-* Connected all backend processors through a single production-ready application.
-* Improved error handling, loading indicators, and overall user experience.
-* Added professional navigation, settings page, footer, and application roadmap.
+macOS/Linux:
 
----
+```bash
+source .venv/bin/activate
+```
 
-# ✨ Current Features
+Install and run:
 
-* 📂 Multi-format file upload (CSV, PDF, DOCX, TXT)
-* 📄 PDF, DOCX, and TXT text extraction
-* 📊 Interactive analytics dashboard
-* 📈 Dataset statistics and KPI visualization
-* 🤖 AI-powered document chat using Google Gemini
-* 🔍 Retrieval-Augmented Generation (RAG) for better document understanding
-* 📑 Executive report generation
-* ⚙ Professional multi-page Streamlit interface
-* ☁ Ready for cloud deployment
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
----
+## Secrets
 
-# 🛠️ Technology Stack
+Create `.streamlit/secrets.toml` locally:
 
-### Frontend
+```toml
+GEMINI_API_KEY = "your-api-key"
+```
 
-* Streamlit
+Never commit real API keys or `secrets.toml`.
 
-### Programming
+## How to Use
 
-* Python
+1. Open the live app.
+2. Sign in with the demo credentials.
+3. Upload a supported dataset or document.
+4. Explore dashboards, profiles, forecasts, risks, and recommendations.
+5. Use AI chat to ask questions.
+6. Export reports.
 
-### Data Processing
+## Screenshots
 
-* Pandas
-* NumPy
+Create:
 
-### Visualization
+```text
+screenshots/
+├── login.png
+├── dashboard-light.png
+├── dashboard-dark.png
+├── data-quality.png
+├── forecast.png
+├── ai-chat.png
+└── report-export.png
+```
 
-* Plotly
-* Matplotlib
+Then add:
 
-### Document Processing
+```markdown
+![InsightOS Dashboard](screenshots/dashboard-light.png)
+![InsightOS Dark Theme](screenshots/dashboard-dark.png)
+```
 
-* PyPDF2
-* Python-Docx
+## Deployment
 
-### Artificial Intelligence
+The application is deployed on Streamlit Community Cloud. Pushes to the connected GitHub repository trigger a rebuild.
 
-* Google Gemini API
+```bash
+git add .
+git commit -m "Update InsightOS"
+git push
+```
 
-### Retrieval
+## Security Notice
 
-* Custom RAG Engine
+The current username and password are demo credentials stored for portfolio access. This is not production-grade authentication.
 
-### Reporting
+For production use:
 
-* Report Generator
+- Store credentials outside the repository.
+- Use OAuth or an identity provider.
+- Add role-based permissions.
+- Validate upload size and type.
+- Never process confidential data in the public demo.
 
-### Version Control
+## Limitations
 
-* Git & GitHub
+- AI-generated output should be reviewed.
+- Forecast quality depends on the uploaded data.
+- Very large files may exceed hosting limits.
+- The demo login is not intended for sensitive deployments.
 
----
+## Future Improvements
 
-# 📅 Development Status
+- Guest mode
+- OAuth authentication
+- Saved dashboards
+- Multi-user workspaces
+- Database-backed history
+- More forecasting models
+- Automated tests
+- Docker support
 
-## ✅ Completed
-
-* Multi-format file upload
-* CSV analytics
-* PDF processing
-* DOCX processing
-* TXT processing
-* Analytics dashboard
-* Google Gemini integration
-* AI document chat
-* RAG engine integration
-* Executive report generation
-* Professional settings page
-* Modular backend architecture
-
-## 🚧 In Progress
-
-* Advanced Plotly visualizations
-* AI-generated PDF reports
-* Enhanced RAG search
-* Business intelligence dashboard
-
-## 🔜 Planned
-
-* LangChain integration
-* FAISS/Vector Database
-* Multi-document AI chat
-* Voice-based interaction
-* Excel analytics
-* SQL database connectivity
-* User authentication
-* Cloud optimization
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-# 👨‍💻 Author
+## Author
 
 **Kartik Dhyani**
 
-Building production-ready AI applications by combining Data Analytics, Business Intelligence, Large Language Models (LLMs), and modern software engineering to create intelligent solutions for real-world data analysis.
+
+- Live App: `(https://insightos-ai-research-analytics-assistant-gwayhlxt2s8xqwewe3zh.streamlit.app/)`
+
+## License
+
+MIT License
