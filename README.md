@@ -4,16 +4,9 @@ InsightOS is a Streamlit-based AI business intelligence platform that converts u
 
 ## Live Application
 
-**Streamlit App:** `PASTE_YOUR_STREAMLIT_APP_URL_HERE`
+**Streamlit App:** `https://insightos-ai-research-analytics-assistant-gwayhlxt2s8xqwewe3zh.streamlit.app/`
 
-### Demo Login
 
-```text
-Username: admin
-Password: insightos123
-```
-
-> These credentials are only for the public portfolio demo. Do not upload confidential or sensitive data.
 
 ## Main Features
 
@@ -76,33 +69,11 @@ Never commit real API keys or `secrets.toml`.
 ## How to Use
 
 1. Open the live app.
-2. Sign in with the demo credentials.
-3. Upload a supported dataset or document.
-4. Explore dashboards, profiles, forecasts, risks, and recommendations.
-5. Use AI chat to ask questions.
-6. Export reports.
+2. Upload a supported dataset or document.
+3. Explore dashboards, profiles, forecasts, risks, and recommendations.
+4. Use AI chat to ask questions.
+5. Export reports.
 
-## Screenshots
-
-Create:
-
-```text
-screenshots/
-├── login.png
-├── dashboard-light.png
-├── dashboard-dark.png
-├── data-quality.png
-├── forecast.png
-├── ai-chat.png
-└── report-export.png
-```
-
-Then add:
-
-```markdown
-![InsightOS Dashboard](screenshots/dashboard-light.png)
-![InsightOS Dark Theme](screenshots/dashboard-dark.png)
-```
 
 ## Deployment
 
@@ -116,15 +87,7 @@ git push
 
 ## Security Notice
 
-The current username and password are demo credentials stored for portfolio access. This is not production-grade authentication.
 
-For production use:
-
-- Store credentials outside the repository.
-- Use OAuth or an identity provider.
-- Add role-based permissions.
-- Validate upload size and type.
-- Never process confidential data in the public demo.
 
 ## Limitations
 
